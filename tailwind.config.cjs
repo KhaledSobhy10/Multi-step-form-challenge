@@ -22,6 +22,9 @@ module.exports = {
         alabaster: "#FAFBFF",
         white: "#FFFFFF",
       },
+      backgroundImage: {
+        desktopIndicator: "url('/src/assets/images/bg-sidebar-desktop.svg')",
+      },
     },
   },
   plugins: [],
