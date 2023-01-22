@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
