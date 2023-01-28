@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         desktopIndicator: "url('/src/assets/images/bg-sidebar-desktop.svg')",
+        mobileIndicator: "url('/src/assets/images/bg-sidebar-mobile.svg')",
       },
     },
   },
