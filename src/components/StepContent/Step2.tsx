@@ -8,6 +8,9 @@ import CustomSwitch from "./common/CustomeSwitch";
 import { FunctionComponent, useContext, useEffect } from "react";
 import { Actions, StepsContext } from "../StepsContext";
 import ButtonsContainer from "./common/ButtonsContainer";
+import arcadIcon from "../../assets/images/icon-arcade.svg";
+import advancedIcon from "../../assets/images/icon-advanced.svg";
+import proIcon from "../../assets/images/icon-pro.svg";
 
 export enum BillingType {
   MONTHLY = "Monthly",
@@ -34,21 +37,21 @@ export const PLANS = {
       id: "1",
       name: "Arcade",
       billingType: BillingType.MONTHLY,
-      iconUrl: "src/assets/images/icon-arcade.svg",
+      iconUrl: arcadIcon,
       price: "$9/mo",
     },
     {
       id: "2",
       name: "Advanced",
       billingType: BillingType.MONTHLY,
-      iconUrl: "src/assets/images/icon-advanced.svg",
+      iconUrl: advancedIcon,
       price: "$12/mo",
     },
     {
       id: "3",
       name: "Pro",
       billingType: BillingType.MONTHLY,
-      iconUrl: "src/assets/images/icon-pro.svg",
+      iconUrl: proIcon,
       price: "$15/mo",
     },
   ],
@@ -57,7 +60,7 @@ export const PLANS = {
       id: "4",
       name: "Arcade",
       billingType: BillingType.YEARLY,
-      iconUrl: "src/assets/images/icon-arcade.svg",
+      iconUrl: arcadIcon,
       price: "$90/yr",
       offer: "2 months free",
     },
@@ -65,7 +68,7 @@ export const PLANS = {
       id: "5",
       name: "Advanced",
       billingType: BillingType.YEARLY,
-      iconUrl: "src/assets/images/icon-advanced.svg",
+      iconUrl: advancedIcon,
       price: "$120/yr",
       offer: "2 months free",
     },
@@ -73,16 +76,14 @@ export const PLANS = {
       id: "6",
       name: "Pro",
       billingType: BillingType.YEARLY,
-      iconUrl: "src/assets/images/icon-pro.svg",
+      iconUrl: proIcon,
       price: "$150/yr",
       offer: "2 months free",
     },
   ],
 };
 
-export interface IStep2Props {
-  next: (selectedPlan: Plan) => void;
-}
+export interface IStep2Props {}
 
 const step1ValidationSchema = Yup.object().shape({
   selectedPlan: Yup.string().required(),

@@ -17,22 +17,13 @@ const StepsContainer: React.FunctionComponent<IStepsContainerProps> = (
 
   switch (myContext?.contextData.currentStepId) {
     case 1:
-      return <Step1 nextHandler={() => {}} />;
+      return <Step1 />;
     case 2:
       return <Step2 />;
     case 3:
-      return <Step3 isMonthly="true" />;
+      return <Step3 />;
     default:
-      return (
-        <Step4
-          plan={{ title: "Arcade(Yearly)", price: "$90/yr" }}
-          addons={[
-            { title: "Online service", price: "$20/yr" },
-            { title: "Large storage", price: "$20/yr" },
-          ]}
-          total={{ title: "Total (per year)", price: "$130/yr" }}
-        />
-      );
+      return <Step4 />;
   }
 };
 

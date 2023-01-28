@@ -14,9 +14,7 @@ export type Step1DataType = {
   phoneNumber: string;
 };
 
-interface IStep1Props {
-  nextHandler: (data: Step1DataType) => void;
-}
+interface IStep1Props {}
 
 const step1ValidationSchema = Yup.object().shape({
   name: Yup.string()
