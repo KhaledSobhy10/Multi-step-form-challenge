@@ -71,7 +71,7 @@ function App() {
   // const [formData, setFormData] = useReducer(reducer, initFormData);
   return (
     <StepsContextProvider>
-      <div className="w-screen h-screen bg-light-blue flex items-center justify-center relative">
+      <main className="w-screen h-screen bg-light-blue flex items-center justify-center relative">
         <div className="sm:hidden w-full h-1/5 border absolute  top-0 bg-blue-500">
           <MobileIndicator steps={StepsInfo} />
         </div>
@@ -81,7 +81,7 @@ function App() {
             <StepsContainer activeStepId={currentStep} />
           </div>
         </div>
-      </div>
+      </main>
     </StepsContextProvider>
   );
 }
