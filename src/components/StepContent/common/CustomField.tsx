@@ -25,6 +25,7 @@ const CustomField: React.FunctionComponent<ICustomFieldProps> = (props) => {
           <ErrorMessage error={props.error} isTouched={props.isTouched} />
         </div>
         <input
+          id={props.name}
           name={props.name}
           type={props.type}
           onChange={props.handleOnChange}
