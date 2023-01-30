@@ -66,7 +66,7 @@ const Step3: React.FunctionComponent<IStep3Props> = (props) => {
     });
 
   return (
-    <div className="flex flex-col gap-8 py-3 sm:px-8 px-2 h-full ">
+    <div className="flex flex-col gap-8 py-3 sm:px-8 px-2 h-full  overflow-y-auto">
       {/* Head of form */}
       <StepHead
         title="Pick add-ons"
@@ -75,7 +75,7 @@ const Step3: React.FunctionComponent<IStep3Props> = (props) => {
       <form
         onSubmit={handleSubmit}
         noValidate
-        className="flex flex-col md:gap-4 gap-2 flex-1 w-full overflow-auto"
+        className="flex flex-col md:gap-4 gap-2 flex-1 w-full"
       >
         <div className="w-full flex flex-col gap-2 sm:gap-4">
           <AddonsBox

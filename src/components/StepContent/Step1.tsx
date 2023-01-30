@@ -54,7 +54,7 @@ const Step1: FunctionComponent<IStep1Props> = (props) => {
   });
 
   return (
-    <div className="flex flex-col gap-8 py-3 sm:px-8 px-2 h-full ">
+    <div className="flex flex-col gap-8 py-3 sm:px-8 px-2 h-full overflow-y-auto">
       {/* Head of form */}
       <StepHead
         title="Personal info"
@@ -63,7 +63,7 @@ const Step1: FunctionComponent<IStep1Props> = (props) => {
       <form
         onSubmit={handleSubmit}
         noValidate
-        className="flex flex-col md:gap-4 gap-2 flex-1 overflow-auto py-4"
+        className="flex flex-col md:gap-4 gap-2 flex-1 "
       >
         {/* Name field */}
         <CustomField

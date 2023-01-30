@@ -129,7 +129,7 @@ const Step2: FunctionComponent<IStep2Props> = (props) => {
     setFieldValue("selectedPlan", newValue);
   }, [values.isMonthly]);
   return (
-    <div className="flex flex-col gap-8 py-3 sm:px-8 px-2 h-full ">
+    <div className="flex flex-col gap-8 py-3 sm:px-8 px-2 h-full overflow-y-auto">
       {/* Head of form */}
       <StepHead
         title="Select your plan"
@@ -138,7 +138,7 @@ const Step2: FunctionComponent<IStep2Props> = (props) => {
       <form
         onSubmit={handleSubmit}
         noValidate
-        className="flex flex-col md:gap-4 gap-2 flex-1 overflow-auto"
+        className="flex flex-col md:gap-4 gap-2 flex-1 "
       >
         <div className="flex gap-5 w-100 p-1 sm:flex-row flex-col ">
           <PlanBox
